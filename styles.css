@@ -1,0 +1,170 @@
+body {
+    font-family: 'Irish Grover', cursive;
+    margin: 0;
+    padding: 0;
+    background: url('main.webp') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+  }
+
+.container {
+    width: 400px; /* Adjust the width as needed */
+    height: 400px; /* Fixed height for consistent size */
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden; /* Ensures no overflowing elements */
+    position: relative; /* For better control of child elements */
+    opacity: 0.8;
+   
+}
+
+.form {
+    display: none; /* Initially hide both forms */
+    position: relative;
+    width: 100%;
+    height: 100%; /* Forms fill the container height */
+}
+
+.form.active {
+    display: block; /* Only show the active form */
+}
+
+.form-container h2{
+    color:red;
+    margin-left:160px;
+}
+
+
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* Adds space below the tabs */
+}
+
+.tab {
+    padding: 6px 30px; /* Adjust padding for better spacing */
+    margin: 0 5px; /* Adds gap between the tabs */
+    cursor: pointer;
+   
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    color: red; /* Default text color */
+    background-color: white; /* Default background color */
+    transition: all 0.3s ease;
+}
+
+.tab.active {
+    background-color: #d91f1f; /* Active background color */
+    color: white; /* Active text color */
+}
+.form-container {
+    padding-right:50px; /* Add padding to ensure proper spacing */
+     /* Include padding within the container's dimensions */
+}
+
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom:10px
+}
+
+.input-group i {  position: absolute;
+                left: 370px; /* Adjust the position of the icon */
+                top: 40%;
+                transform: translateY(-50%);
+                font-size: 18px; /* Adjust icon size */
+                color: #040404; /* Optional: icon color */
+               }
+
+.input-group input {
+    width: 100%;
+    padding: 10px 40px 10px 10px;
+    border: 2px solid #e2dbdb;
+    border-radius: 15px;
+    font-size: 14px;
+}
+
+.input-group input::placeholder {
+    font-family: 'Irish Grover', cursive;
+    color: #d91f1f; 
+}
+.input-group .icon {
+    position: relative;
+    right: -370px;
+    top: -35px;
+    transform: translateY(-50%);
+    font-size: 18px;
+}
+
+.forgot-password {
+    font-size: 12px;
+    color: #ff4a4a;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 15px;
+    margin-top:-40px;
+}
+
+.btn {
+    width: 400px;
+    padding: 10px;
+    background: #ff4a4a;
+    color: #fff;
+    font-family: 'Irish Grover', cursive;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#signUpForm h2{
+    margin-left: 120px; /* Adjust this value to control how much to the left */
+}
+
+.btn:hover {
+    background: #ad0606;
+}
+
+.social-login {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+    margin-left:50px;
+}
+
+.social-icon {
+    width: 35px; /* Decrease width to reduce space around the icon */
+    height: 35px; /* Decrease height to match the new width */
+    background: #fff; /* Default background color */
+    color: #ff4a4a; /* Default icon color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 20px; /* Icon size */
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0 5px; /* Reduce gap between icons */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect */
+.social-icon:hover {
+    background-color: #ff4a4a; /* Change background to orange */
+    color: white; /* Change icon color to white */
+}
+
+
+.hidden {
+    display: none;
+}
