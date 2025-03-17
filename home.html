@@ -1,0 +1,478 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+   
+    
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap" rel="stylesheet">
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="home1.css">
+    <link rel="stylesheet" href="loading.css"> 
+    <link rel="preload" as="image" href="assets/Group 5.webp" loading="lazy">
+
+</head>
+<body>
+    <body>
+       
+    
+            <header class="header">
+                <nav class="navbar">
+                    <div class="navbar-content">
+                        <!-- Logo -->
+                        <a href="#" class="logo">
+                            <img src="logo.png" alt="Logo" />
+                        </a>
+            
+                        <!-- Mobile Toggle Button -->
+                        <button id="mobile-menu-toggle" class="menu-toggle">
+                            <i class="fas fa-bars"></i>
+                        </button>
+            
+                        <!-- Desktop Navigation Links -->
+                        <ul class="navbar-links" id="navbar-links">
+                            <li><a href="C:\xampp\htdocs\signup\home.html">Home</a></li>
+                            <li><a href="nutrition.html">Services</a></li>
+                            <li><a href="#tools">Tools</a></li>
+                            <li><a href="#contact">Community</a></li>
+                            <li><a href="#contact">Fitness</a></li>
+                            <li><a href="#contact">Trainer</a></li>
+                            <li><a href="#contact">Shop</a></li>
+                        </ul>
+            
+                        <div class="user-info">
+                    <span id="user-email"></span>
+                    <a href="index.html" class="btn btn-danger ml-3">Sign Out</a>
+                </div>
+                    </div>
+                </nav>
+            
+                <!-- Mobile Drawer -->
+                <div id="mobile-drawer" class="mobile-drawer">
+         Close Button 
+        <button id="close-drawer" class="close-drawer">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="nutrition.html">Services</a></li>
+            <li><a href="#tools">Tools</a></li>
+            <li><a href="#contact">Community</a></li>
+            <li><a href="#contact">Fitness(under maintance)</a></li>
+            <li><a href="#contact">Trainer</a></li>
+            <li><a href="#contact">Shop</a></li>
+        </ul>
+    </div>
+            </header>
+    
+    
+            
+            
+            
+    
+            <div class="hero-section" data-rellax-speed="-9">
+                <img class="hero-image" src="your-image.jpg" alt="Inspiring Image">
+                <div class="hero-content">
+                    <h1>SOMETIMES , YOU JUST GOT TO BEARITT</h1>
+                    <p class="main-text">UNLOCK YOUR</p>
+                    <p class="highlight1">POTENTIAL WITH US</p>
+                    <a href="#get-started" class="cta-button">Get Started</a>
+                </div>
+                <button class="scroll-btn" onclick="scrollToNext()">
+                    <img src="scroll.png" alt="Scroll Down" style="width: 100%; height: 100%;">
+                </button>
+            </div>
+
+            <script>
+                document.querySelector('.scroll-btn').addEventListener('click', function () {
+                    document.querySelector('.section').scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            </script>
+
+            <script>
+                var rellax = new Rellax('.hero-section');
+            </script>
+
+            
+
+   
+
+  <!-- What is Bearitt Section -->
+  <section class="section"  >
+    <div class="content-wrapper">
+        <div class="animated-section">
+            <h1>What is Bearitt?</h1>
+            <p>Bearitt is more than just a fitness platform; it's a movement! We aim to empower individuals to achieve their fitness goals through personalized plans, expert guidance, and a supportive community.</p>
+            <ul>
+                <li>Provide tailored fitness and nutrition plans for everyone.</li>
+                <li>Build a supportive fitness community to stay motivated.</li>
+                <li>Promote healthy lifestyles and long-term fitness journeys.</li>
+                <li>Empower fitness trainers to reach a wider audience.</li>
+            </ul>
+        </div>
+        <div class="video-container">
+            <video src="assets/loading (1).mp4" autoplay muted loop></video>
+        </div>
+    </div>
+</section>
+
+
+
+  <section class="section2">
+    <!-- Swiper Slider Section (Old Cards) -->
+    <div class="swiper-container my-swiper">
+        <div class="swiper-wrapper">
+            <!-- Card 1 -->
+            <div class="swiper-slide">
+                <a href="bulk.html" class="card-link">
+                <div class="card-container">
+                    <img src="assets/home/blk hom.webp" alt="Card 1" class="card-image" loading="lazy">
+                    <div class="card-overlay">
+                        <h5 class="card-title">Men's Cutting / Bulking</h5>
+                    </div>
+                </div> </a>
+            </div>
+            <!-- Card 2 -->
+            <div class="swiper-slide">
+                <a href="womendiet.html" class="card-link">
+                <div class="card-container">
+                    
+                    <img src="assets/home/wombulk.webp" alt="Card 2" class="card-image" loading="lazy">
+                    <div class="card-overlay">
+                        <h5 class="card-title">Women's Diet Plan</h5>
+                    </div>
+                </div></a>
+            </div>
+            <!-- Card 3 -->
+            <div class="swiper-slide">
+                <a href="community.html" class="card-link">
+                <div class="card-container">
+                    <img src="assets/group-people-exercising-together-outdoors.webp" alt="Card 3" class="card-image" loading="lazy">
+                    <div class="card-overlay">
+                        <h5 class="card-title">Community</h5>
+                    </div>
+                </div></a>
+            </div>
+            <!-- Card 4 -->
+            <div class="swiper-slide">
+                <a href="#" class="card-link">
+                <div class="card-container">
+                    <img src="assets/Untitled design (6).webp" alt="Card 4" class="card-image" loading="lazy">
+                    <div class="card-overlay">
+                        <h5 class="card-title">Exercises</h5>
+                    </div>
+                </div></a>
+            </div>
+            <!-- Additional Cards -->
+            <div class="swiper-slide">
+                <a href="bmr.html" class="card-link">
+                <div class="card-container">
+                    <img src="assets/physical-activity-stats-around-person (1).webp" alt="Card 5" class="card-image" loading="lazy">
+                    <div class="card-overlay">
+                        <h5 class="card-title">BMR Calculator</h5>
+                    </div>
+                </div></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="smoothis.html" class="card-link">
+                <div class="card-container">
+                    <img src="assets/berry-kiwi-smoothies-straws.webp" alt="Card 6" class="card-image" loading="lazy" >
+                    <div class="card-overlay">
+                        <h5 class="card-title">Smoothies</h5>
+                    </div>
+                </div></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="fitness.html" class="card-link">
+                <div class="card-container">
+                    <img src="assets/Untitled design (5).webp" alt="Card 7" class="card-image" loading="lazy">
+                    <div class="card-overlay">
+                        <h5 class="card-title">Fitness</h5>
+                    </div>
+                </div></a>
+            </div>
+
+            <div class="swiper-slide">
+                <a href="trainer.html" class="card-link">
+                <div class="card-container">
+                    <img src="assets/attractive-man-showing-muscles.webp" alt="Card 8" class="card-image" loading="lazy">
+                    <div class="card-overlay">
+                        <h5 class="card-title">Trainer</h5>
+                    </div>
+                </div></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="store/index.html" class="card-link">
+                <div class="card-container">
+                    <img src="assets/Untitled design (5).webp" alt="Card 7" class="card-image" loading="lazy">
+                    <div class="card-overlay">
+                        <h5 class="card-title">Shop</h5>
+                    </div>
+                </div></a>
+            </div>
+        </div>
+        <div class="custom-navigation">
+            <div class="custom-swiper-button swiper-button-prev">
+                <!-- <i class="fa-solid fa-arrow-left"></i> -->
+            </div>
+            <div class="custom-swiper-button swiper-button-next">
+                <!-- <i class="fa-solid fa-arrow-right"></i> -->
+            </div>
+        </div>
+    </div>
+  </section>
+ <!--  Trainer Section -->
+    <div class="trainer-section">
+        <!-- <h2 class="section-title">Become or Hire a Fitness Trainer</h2> -->
+        <div class="trainer-options">
+            <div class="trainer-option">
+                <h3>Become a Fitness Trainer</h3>
+                <p>Join our network of expert trainers and inspire others to achieve their fitness goals. Whether you're a seasoned professional or just starting out, Bearitt offers you the tools and resources to build your career and connect with a large community.</p>
+                <ul>
+                    <li>Access to a wide client base</li>
+                    <li>Training resources and certifications</li>
+                    <li>Promote your services and expertise</li>
+                    <li>Earn based on your experience and client engagements</li>
+                </ul>
+                <a href="#" class="cta-button1">Become a Trainer</a>
+            </div>
+            <div class="trainer-option">
+                <h3>Hire a Trainer</h3>
+                <p>Looking for personalized fitness coaching? Hire a certified trainer to guide you through your fitness journey. Our trainers specialize in various areas including strength, flexibility, nutrition, and overall wellness.</p>
+                <ul>
+                    <li>Find trainers based on your fitness goals</li>
+                    <li>Choose from a variety of specialties</li>
+                    <li>Work with top-rated fitness professionals</li>
+                    <li>Flexible training options (in-person or online)</li>
+                </ul>
+                <a href="#" class="cta-button1">Browse Trainers</a>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+
+    <!-- Fitness Trainer Section -->
+<section class="fitness-trainer-section">
+    <div class="content">
+        <h1>ARE YOU A FITNESS TRAINER?</h1>
+        <p class="sub-heading">Are You Looking To Expand Your Reach</p>
+        <p class="highlight">Here’s Your Opportunity !!</p>
+        <a href="trainer-info.html" class="cta-button">Click to Know More</a>
+    </div>
+</section>
+
+
+<!-- Featured Services Section -->
+<section class="featured-services py-5">
+    <div class="container text-center">
+        <h2 class="section-title">Our Key Features</h2>
+        <p class="section-description">Explore what makes us unique and start your fitness journey with confidence!</p>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="service-card">
+                    <i class="fas fa-dumbbell service-icon"></i>
+                    <h4 class="service-title">Personalized Workout Plans</h4>
+                    <p class="service-description">Get customized workout routines tailored to your goals.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card">
+                    <i class="fas fa-apple-alt service-icon"></i>
+                    <h4 class="service-title">Nutrition Guidance</h4>
+                    <p class="service-description">Discover diet plans that suit your lifestyle and fitness level.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card">
+                    <i class="fas fa-users service-icon"></i>
+                    <h4 class="service-title">Community Support</h4>
+                    <p class="service-description">Join a community of like-minded fitness enthusiasts.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+  <!-- OUR TOOLS -->
+  <section class="our-tools">
+    <div class="container">
+        <h2 class="section-title">Our Tools</h2>
+        <p class="section-description">
+            Discover tools designed to elevate your fitness journey.
+        </p>
+        <div class="tool-cards">
+            <div class="tool-card">
+                <a href="womendiet.html" class="our-tools"></a>
+                <h3 class="tool-title">BMR Calculator</h3>
+                <p class="tool-description">
+                    Understand your Basal Metabolic Rate for better planning.
+                </p>
+            </div>
+            <div class="tool-card">
+                <h3 class="tool-title">Body Fat Calculator</h3>
+                <p class="tool-description">
+                    Track and analyze your body composition easily.
+                </p>
+            </div>
+            <div class="tool-card">
+                <h3 class="tool-title">Macro Calculator</h3>
+                <p class="tool-description">
+                    Customize your macronutrient intake for optimal results.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+ <!-- CommunitySection -->
+ <section class="community-section">
+    <div class="community-container">
+        <div class="community-content">
+            <h2>Join Our Fitness Community</h2>
+            <p>Be a part of a vibrant community of fitness enthusiasts who inspire and motivate each other every day. Together, we achieve health and wellness goals through shared knowledge, support, and a passion for fitness.</p>
+            <ul class="community-benefits">
+                <li><strong>🚀 Better Plans:</strong> Tailored workout and diet plans to suit your needs.</li>
+                <li><strong>🔥 Exclusive Bootcamps:</strong> Participate in engaging fitness bootcamps led by experts.</li>
+                <li><strong>🤝 Group Sessions:</strong> Fun and effective group workout sessions.</li>
+                <li><strong>🌐 Networking:</strong> Connect with like-minded fitness enthusiasts and trainers.</li>
+                <li><strong>💬 24/7 Support:</strong> Access community forums and expert advice anytime.</li>
+            </ul>
+            <a href="community.html">
+                <button class="join-now-btn">Join Now</button>
+            </a>
+        </div>
+        <div class="community-image">
+            <img src="assets/demo.webp" alt="Fitness Community">
+        </div>
+    </div>
+</section>
+
+<!-- APP SECTION -->
+<section id="app-introduction" class="app-section text-center">
+    <div class="container">
+        <h2 class="section-title">Introducing Our App</h2>
+        <p class="app-description">
+            Your fitness journey just got easier! Our app will bring personalized plans, real-time progress tracking, and much more—all in the palm of your hand. 
+        </p>
+        <div class="app-coming-soon">
+            <p><strong>Coming Soon!</strong> Stay tuned for updates.</p>
+        </div>
+        <img src="assets/ourapk.webp" alt="App Preview" class="app-preview-image">
+    </div>
+</section>
+
+
+   <!-- Testimonials Section -->
+<section class="testimonials py-5 bg-light">
+    <div class="container text-center">
+        <h2 class="section-title">What Our Users Say</h2>
+        <p class="section-description">Hear from our amazing users who transformed their fitness journeys with us.</p>
+        <div class="swiper-container testimonial-swiper">
+            <div class="swiper-wrapper">
+                <!-- Testimonial 1 -->
+                <div class="swiper-slide testimonial-card">
+                    <p class="testimonial-text">"This website completely changed my perspective on fitness. The plans are amazing!"</p>
+                    <h5 class="testimonial-author">- John Doe</h5>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="swiper-slide testimonial-card">
+                    <p class="testimonial-text">"Joining this community was the best decision. The trainers are so supportive!"</p>
+                    <h5 class="testimonial-author">- Jane Smith</h5>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="swiper-slide testimonial-card">
+                    <p class="testimonial-text">"I’ve achieved my dream body thanks to their personalized diet and workout plans!"</p>
+                    <h5 class="testimonial-author">- Mike Johnson</h5>
+                </div>
+            </div>
+            <!-- Swiper Navigation -->
+            
+        </div>
+    </div>
+</section>
+
+
+
+
+    <!-- Custom JS for Swiper and other functionalities -->
+    <script src="home.js"></script>
+    
+    <script>
+        
+        setTimeout(function() {
+          document.getElementById("loading-screen").style.display = "none"; 
+          document.getElementById("content-area").classList.remove("hidden"); 
+      }, 4000);
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const sections = document.querySelectorAll('.animated-section');
+    
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.5 });
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+});
+
+      
+      </script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper(".my-swiper", {
+        effect: "coverflow",  // Enables 3D Coverflow effect
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+            rotate: 30,       // Rotation angle for the 3D effect
+            stretch: 0,       // Space between slides
+            depth: 300,       // Depth for the 3D effect
+            modifier: 1,      // Multiplier for depth
+            slideShadows: true // Adds shadows for depth
+        },
+        loop: true,          // Infinite loop
+        autoplay: {
+            delay: 2000,     // Auto-slide every 2 seconds
+            disableOnInteraction: false // Continue autoplay after user interaction
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+        }
+    });
+</script>
+
+    
+</body>
+</html>
